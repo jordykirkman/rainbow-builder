@@ -7,6 +7,64 @@ html, body {
 
 	.artboard {
 		background-color: #6392ad;
+
+		.sparkle {
+			opacity: 0;
+			-webkit-transform-origin: 50% 50%
+		}
+		.sparkle.one {
+			-webkit-animation-delay: 0.5s;
+		}
+		.sparkle.two {
+			-webkit-animation-delay: 1s;
+		}
+		.sparkle.three {
+			-webkit-animation-delay: 2s;
+		}
+		.sparkle.four {
+			-webkit-animation-delay: 0.5s;
+		}
+		.sparkle.five {
+			-webkit-animation-delay: 1s;
+		}
+		.sparkle.six {
+			-webkit-animation-delay: 2s;
+		}
 	}
 
 }
+
+.artboard.shine .sparkle {
+	-webkit-animation: shine 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.artboard.bling .sparkle {
+	-webkit-animation: bling 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.artboard.pop .sparkle {
+	-webkit-animation: pop 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes shine {
+	0%   {-webkit-transform: scale(0) rotate(0deg); opacity: 0}
+	50%  {-webkit-transform: scale(1) rotate(180deg); opacity: 1}
+	100%  {-webkit-transform: scale(0) rotate(360deg); opacity: 0}
+}
+
+@-webkit-keyframes bling {
+	0%   {-webkit-transform: scale(0); opacity: 0}
+	50%  {-webkit-transform: scale(1,1); opacity: 1}
+	100%  {-webkit-transform: scale(1,2); opacity: 0}
+}
+
+@-webkit-keyframes pop {
+	0%   {-webkit-transform: scale(0) rotate(0deg); opacity: 0}
+	50%  {-webkit-transform: scale(.5) rotate(360deg); opacity: 1}
+	100%  {-webkit-transform: scale(0) rotate(720deg); opacity: 0}
+}
+
