@@ -7,6 +7,8 @@ html, body {
 
 	.artboard {
 		background-color: #6392ad;
+		height: 600px;
+		margin-bottom: 20px;
 
 		.sparkle {
 			opacity: 0;
@@ -23,12 +25,6 @@ html, body {
 		}
 		.sparkle.four {
 			-webkit-animation-delay: 0.5s;
-		}
-		.sparkle.five {
-			-webkit-animation-delay: 1s;
-		}
-		.sparkle.six {
-			-webkit-animation-delay: 2s;
 		}
 	}
 
