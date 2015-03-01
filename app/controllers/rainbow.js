@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
 	color2: "#00d3ff",
 	color3: "#f0bdff",
 
-	styles: Ember.A(["shine", "bling", "pop"]),
+	styles: Ember.A(["shine", "bling", "dazzle"]),
 	sparkleStyle: "shine",
 
 });
